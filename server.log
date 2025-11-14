@@ -956,3 +956,261 @@
 [2025-11-14 01:32:31] Timeout para jogador 2, defesa aplicada
 [2025-11-14 01:32:31] TX: R1|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
 [2025-11-14 01:32:31] TX: T2
+[2025-11-14 01:41:40] Servidor iniciado na porta 5050
+[2025-11-14 01:44:15] Gerenciador de partida iniciado
+[2025-11-14 01:45:15] Jogador 1 não selecionou classe
+[2025-11-14 01:45:15] RX[1]: G
+[2025-11-14 01:45:15] RX[2]: J2M
+[2025-11-14 01:45:15] Gerenciador de partida iniciado
+[2025-11-14 01:46:15] Jogador 1 não selecionou classe
+[2025-11-14 01:46:15] RX[1]: J1R
+[2025-11-14 01:46:15] RX[2]: J2M
+[2025-11-14 01:46:15] Gerenciador de partida iniciado
+[2025-11-14 01:46:15] TX: T1
+[2025-11-14 01:46:35] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:46:35] TX: R1|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:46:35] TX: T2
+[2025-11-14 01:46:55] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:47:15] Timeout para jogador 2, defesa aplicada
+[2025-11-14 01:47:15] TX: R2|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:47:15] TX: T1
+[2025-11-14 01:47:35] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:47:55] Timeout para jogador 2, defesa aplicada
+[2025-11-14 01:47:55] TX: R1|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:47:55] TX: T2
+[2025-11-14 01:48:15] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:48:35] Timeout para jogador 2, defesa aplicada
+[2025-11-14 01:48:35] TX: R2|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:48:35] TX: T1
+[2025-11-14 01:48:55] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:49:15] Timeout para jogador 2, defesa aplicada
+[2025-11-14 01:49:15] TX: R1|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:49:15] TX: T2
+[2025-11-14 01:49:35] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:49:55] Timeout para jogador 2, defesa aplicada
+[2025-11-14 01:49:55] TX: R2|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:49:55] TX: T1
+[2025-11-14 01:50:15] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:50:35] Timeout para jogador 2, defesa aplicada
+[2025-11-14 01:50:35] TX: R1|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:50:35] TX: T2
+[2025-11-14 01:50:55] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:51:15] Timeout para jogador 2, defesa aplicada
+[2025-11-14 01:51:15] TX: R2|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:51:15] TX: T1
+[2025-11-14 01:51:35] Timeout para jogador 1, defesa aplicada
+[2025-11-14 01:51:55] Timeout para jogador 2, defesa aplicada
+[2025-11-14 01:51:55] TX: R1|H1:100/50|H2:100/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 01:51:55] TX: T2
+[2025-11-14 01:53:15] Servidor iniciado na porta 5050
+[2025-11-14 01:53:30] Gerenciador de partida iniciado
+[2025-11-14 01:54:30] Jogador 1 não selecionou classe
+[2025-11-14 01:54:30] RX[1]: G
+[2025-11-14 01:54:30] RX[2]: J2M
+[2025-11-14 01:54:30] Gerenciador de partida iniciado
+[2025-11-14 01:55:30] Jogador 1 não selecionou classe
+[2025-11-14 01:55:30] Gerenciador de partida iniciado
+[2025-11-14 01:56:26] Servidor iniciado na porta 5050
+[2025-11-14 01:57:04] Gerenciador de partida iniciado
+[2025-11-14 01:57:14] RX[1]: G
+[2025-11-14 01:58:04] Jogador 1 não selecionou classe
+[2025-11-14 01:58:04] RX[2]: J2M
+[2025-11-14 01:58:04] Gerenciador de partida iniciado
+[2025-11-14 01:59:04] Jogador 1 não selecionou classe
+[2025-11-14 01:59:04] Gerenciador de partida iniciado
+[2025-11-14 02:00:20] Servidor iniciado na porta 5050
+[2025-11-14 02:00:57] Gerenciador de partida iniciado
+[2025-11-14 02:00:57] Aguardando seleção de classe do jogador 1
+[2025-11-14 02:01:07] RX[1]: G
+[2025-11-14 02:01:57] Timeout aguardando seleção de classe do jogador 1
+[2025-11-14 02:01:57] Jogador 1 não selecionou classe
+[2025-11-14 02:01:57] RX[2]: J2M
+[2025-11-14 02:01:57] RX[2]: J2M (colocando na fila)
+[2025-11-14 02:01:57] Mensagem J2M colocada na fila do cliente 2
+[2025-11-14 02:01:57] Gerenciador de partida iniciado
+[2025-11-14 02:01:57] Aguardando seleção de classe do jogador 1
+[2025-11-14 02:02:57] Timeout aguardando seleção de classe do jogador 1
+[2025-11-14 02:02:57] Jogador 1 não selecionou classe
+[2025-11-14 02:02:57] Gerenciador de partida iniciado
+[2025-11-14 02:02:57] Aguardando seleção de classe do jogador 1
+[2025-11-14 02:03:57] Timeout aguardando seleção de classe do jogador 1
+[2025-11-14 02:03:57] Jogador 1 não selecionou classe
+[2025-11-14 02:03:57] Gerenciador de partida iniciado
+[2025-11-14 02:03:57] Aguardando seleção de classe do jogador 1
+[2025-11-14 02:04:48] Cliente 1 desconectado
+[2025-11-14 02:04:48] Mensagem recebida da fila do cliente 1: Q
+[2025-11-14 02:04:48] Jogador 1 saiu durante seleção de classe
+[2025-11-14 02:04:48] Jogador 1 não selecionou classe
+[2025-11-14 02:05:41] Servidor iniciado na porta 5050
+[2025-11-14 02:05:56] Gerenciador de partida iniciado
+[2025-11-14 02:05:56] Aguardando seleção de classe do jogador 1
+[2025-11-14 02:06:02] RX[1]: J1G
+[2025-11-14 02:06:02] RX[1]: J1G (colocando na fila)
+[2025-11-14 02:06:02] Mensagem J1G colocada na fila do cliente 1
+[2025-11-14 02:06:02] Mensagem recebida da fila do cliente 1: J1G
+[2025-11-14 02:06:02] Jogador 1 selecionou classe 0
+[2025-11-14 02:06:02] Aguardando seleção de classe do jogador 2
+[2025-11-14 02:06:07] RX[2]: J2M
+[2025-11-14 02:06:07] RX[2]: J2M (colocando na fila)
+[2025-11-14 02:06:07] Mensagem J2M colocada na fila do cliente 2
+[2025-11-14 02:06:07] Mensagem recebida da fila do cliente 2: J2M
+[2025-11-14 02:06:07] Jogador 2 selecionou classe 1
+[2025-11-14 02:06:07] TX: T1
+[2025-11-14 02:06:16] RX[1]: M11A
+[2025-11-14 02:06:16] RX[1]: M11A (colocando na fila)
+[2025-11-14 02:06:16] Mensagem M11A colocada na fila do cliente 1
+[2025-11-14 02:06:20] RX[2]: M12A
+[2025-11-14 02:06:20] RX[2]: M12A (colocando na fila)
+[2025-11-14 02:06:20] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 02:06:20] TX: R1|H1:92/50|H2:88/50|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:06:20] TX: T2
+[2025-11-14 02:06:31] RX[1]: M21D
+[2025-11-14 02:06:31] RX[1]: M21D (colocando na fila)
+[2025-11-14 02:06:31] Mensagem M21D colocada na fila do cliente 1
+[2025-11-14 02:06:31] RX[2]: M22S0
+[2025-11-14 02:06:31] RX[2]: M22S0 (colocando na fila)
+[2025-11-14 02:06:31] Mensagem M22S0 colocada na fila do cliente 2
+[2025-11-14 02:06:31] TX: R2|H1:77/50|H2:88/35|C1:0/0|C2:2/0|L:P1 Defesa0, P2 Skill30, dano final 15 e 0
+[2025-11-14 02:06:31] TX: T1
+[2025-11-14 02:06:51] Timeout para jogador 1, defesa aplicada
+[2025-11-14 02:07:06] RX[2]: M12A
+[2025-11-14 02:07:06] RX[2]: M12A (colocando na fila)
+[2025-11-14 02:07:06] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 02:07:06] TX: R1|H1:73/50|H2:88/35|C1:0/0|C2:1/0|L:P1 Defesa0, P2 Ataque8, dano final 4 e 0
+[2025-11-14 02:07:06] TX: T2
+[2025-11-14 02:07:06] RX[1]: M11A
+[2025-11-14 02:07:06] RX[1]: M11A (colocando na fila)
+[2025-11-14 02:07:06] Mensagem M11A colocada na fila do cliente 1
+[2025-11-14 02:07:20] RX[2]: M22A
+[2025-11-14 02:07:20] RX[2]: M22A (colocando na fila)
+[2025-11-14 02:07:20] Mensagem M22A colocada na fila do cliente 2
+[2025-11-14 02:07:20] TX: R2|H1:69/50|H2:88/35|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Ataque8, dano final 4 e 0
+[2025-11-14 02:07:20] TX: T1
+[2025-11-14 02:07:29] RX[1]: M11A
+[2025-11-14 02:07:29] RX[1]: M11A (colocando na fila)
+[2025-11-14 02:07:29] Mensagem M11A colocada na fila do cliente 1
+[2025-11-14 02:07:34] RX[2]: M12A
+[2025-11-14 02:07:34] RX[2]: M12A (colocando na fila)
+[2025-11-14 02:07:34] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 02:07:34] TX: R1|H1:61/50|H2:76/35|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:07:34] TX: T2
+[2025-11-14 02:07:46] RX[1]: M21S0
+[2025-11-14 02:07:46] RX[1]: M21S0 (colocando na fila)
+[2025-11-14 02:07:46] Mensagem M21S0 colocada na fila do cliente 1
+[2025-11-14 02:08:06] Timeout para jogador 2, defesa aplicada
+[2025-11-14 02:08:06] TX: R2|H1:61/40|H2:61/35|C1:2/0|C2:0/0|L:P1 Skill25, P2 Defesa0, dano final 0 e 15
+[2025-11-14 02:08:06] TX: T1
+[2025-11-14 02:08:20] RX[1]: M11S0
+[2025-11-14 02:08:20] RX[1]: M11S0 (colocando na fila)
+[2025-11-14 02:08:20] Mensagem M11S0 colocada na fila do cliente 1
+[2025-11-14 02:08:20] RX[2]: M12H0
+[2025-11-14 02:08:20] RX[2]: M12H0 (colocando na fila)
+[2025-11-14 02:08:20] Mensagem M12H0 colocada na fila do cliente 2
+[2025-11-14 02:08:20] TX: R1|H1:61/40|H2:67/23|C1:1/0|C2:0/2|L:P1 Ataque12, P2 Cura18, dano final 0 e 12
+[2025-11-14 02:08:20] TX: T2
+[2025-11-14 02:08:41] Timeout para jogador 1, defesa aplicada
+[2025-11-14 02:08:41] RX[2]: M22H0
+[2025-11-14 02:08:41] RX[2]: M22H0 (colocando na fila)
+[2025-11-14 02:08:41] Mensagem M22H0 colocada na fila do cliente 2
+[2025-11-14 02:08:41] TX: R2|H1:57/40|H2:67/23|C1:0/0|C2:0/1|L:P1 Defesa0, P2 Ataque8, dano final 4 e 0
+[2025-11-14 02:08:41] TX: T1
+[2025-11-14 02:09:01] Timeout para jogador 1, defesa aplicada
+[2025-11-14 02:09:07] RX[2]: M12H0
+[2025-11-14 02:09:07] RX[2]: M12H0 (colocando na fila)
+[2025-11-14 02:09:07] Mensagem M12H0 colocada na fila do cliente 2
+[2025-11-14 02:09:07] TX: R1|H1:57/40|H2:85/11|C1:0/0|C2:0/2|L:P1 Defesa0, P2 Cura18, dano final 0 e 0
+[2025-11-14 02:09:07] TX: T2
+[2025-11-14 02:09:07] RX[1]: M11A
+[2025-11-14 02:09:07] RX[1]: M11A (colocando na fila)
+[2025-11-14 02:09:07] Mensagem M11A colocada na fila do cliente 1
+[2025-11-14 02:09:22] RX[2]: M22A
+[2025-11-14 02:09:22] RX[2]: M22A (colocando na fila)
+[2025-11-14 02:09:22] Mensagem M22A colocada na fila do cliente 2
+[2025-11-14 02:09:22] TX: R2|H1:53/40|H2:85/11|C1:0/0|C2:0/1|L:P1 Defesa0, P2 Ataque8, dano final 4 e 0
+[2025-11-14 02:09:22] TX: T1
+[2025-11-14 02:09:26] RX[1]: M11A
+[2025-11-14 02:09:26] RX[1]: M11A (colocando na fila)
+[2025-11-14 02:09:26] Mensagem M11A colocada na fila do cliente 1
+[2025-11-14 02:09:33] RX[2]: M12A
+[2025-11-14 02:09:33] RX[2]: M12A (colocando na fila)
+[2025-11-14 02:09:33] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 02:09:33] TX: R1|H1:45/40|H2:73/11|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:09:33] TX: T2
+[2025-11-14 02:09:38] RX[1]: M21A
+[2025-11-14 02:09:38] RX[1]: M21A (colocando na fila)
+[2025-11-14 02:09:38] Mensagem M21A colocada na fila do cliente 1
+[2025-11-14 02:09:42] RX[2]: M22A
+[2025-11-14 02:09:42] RX[2]: M22A (colocando na fila)
+[2025-11-14 02:09:42] Mensagem M22A colocada na fila do cliente 2
+[2025-11-14 02:09:42] TX: R2|H1:37/40|H2:61/11|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:09:42] TX: T1
+[2025-11-14 02:09:48] RX[1]: M11A
+[2025-11-14 02:09:48] RX[1]: M11A (colocando na fila)
+[2025-11-14 02:09:48] Mensagem M11A colocada na fila do cliente 1
+[2025-11-14 02:09:52] RX[2]: M12A
+[2025-11-14 02:09:52] RX[2]: M12A (colocando na fila)
+[2025-11-14 02:09:52] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 02:09:52] TX: R1|H1:29/40|H2:49/11|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:09:52] TX: T2
+[2025-11-14 02:09:57] RX[1]: M21A
+[2025-11-14 02:09:57] RX[1]: M21A (colocando na fila)
+[2025-11-14 02:09:57] Mensagem M21A colocada na fila do cliente 1
+[2025-11-14 02:10:01] RX[2]: M22A
+[2025-11-14 02:10:01] RX[2]: M22A (colocando na fila)
+[2025-11-14 02:10:01] Mensagem M22A colocada na fila do cliente 2
+[2025-11-14 02:10:01] TX: R2|H1:21/40|H2:37/11|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:10:01] TX: T1
+[2025-11-14 02:10:17] RX[1]: G
+[2025-11-14 02:10:21] Timeout para jogador 1, defesa aplicada
+[2025-11-14 02:10:21] RX[2]: G
+[2025-11-14 02:10:41] Timeout para jogador 2, defesa aplicada
+[2025-11-14 02:10:41] TX: R1|H1:21/40|H2:37/11|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 02:10:41] TX: T2
+[2025-11-14 02:10:57] RX[1]: M21A
+[2025-11-14 02:10:57] RX[1]: M21A (colocando na fila)
+[2025-11-14 02:10:57] Mensagem M21A colocada na fila do cliente 1
+[2025-11-14 02:10:57] RX[2]: M22A
+[2025-11-14 02:10:57] RX[2]: M22A (colocando na fila)
+[2025-11-14 02:10:57] Mensagem M22A colocada na fila do cliente 2
+[2025-11-14 02:10:57] TX: R2|H1:13/40|H2:25/11|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:10:57] TX: T1
+[2025-11-14 02:11:06] RX[1]: M11D
+[2025-11-14 02:11:06] RX[1]: M11D (colocando na fila)
+[2025-11-14 02:11:06] Mensagem M11D colocada na fila do cliente 1
+[2025-11-14 02:11:10] RX[2]: M12A
+[2025-11-14 02:11:10] RX[2]: M12A (colocando na fila)
+[2025-11-14 02:11:10] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 02:11:10] TX: R1|H1:9/40|H2:25/11|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Ataque8, dano final 4 e 0
+[2025-11-14 02:11:10] TX: T2
+[2025-11-14 02:11:17] RX[1]: M21D
+[2025-11-14 02:11:17] RX[1]: M21D (colocando na fila)
+[2025-11-14 02:11:17] Mensagem M21D colocada na fila do cliente 1
+[2025-11-14 02:11:22] RX[2]: M22D
+[2025-11-14 02:11:22] RX[2]: M22D (colocando na fila)
+[2025-11-14 02:11:22] Mensagem M22D colocada na fila do cliente 2
+[2025-11-14 02:11:22] TX: R2|H1:9/40|H2:25/11|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Defesa0, dano final 0 e 0
+[2025-11-14 02:11:22] TX: T1
+[2025-11-14 02:11:27] RX[1]: M11A
+[2025-11-14 02:11:27] RX[1]: M11A (colocando na fila)
+[2025-11-14 02:11:27] Mensagem M11A colocada na fila do cliente 1
+[2025-11-14 02:11:32] RX[2]: M12A
+[2025-11-14 02:11:32] RX[2]: M12A (colocando na fila)
+[2025-11-14 02:11:32] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 02:11:32] TX: R1|H1:1/40|H2:13/11|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:11:32] TX: T2
+[2025-11-14 02:11:39] RX[1]: M21A
+[2025-11-14 02:11:39] RX[1]: M21A (colocando na fila)
+[2025-11-14 02:11:39] Mensagem M21A colocada na fila do cliente 1
+[2025-11-14 02:11:42] RX[2]: M22A
+[2025-11-14 02:11:42] RX[2]: M22A (colocando na fila)
+[2025-11-14 02:11:42] Mensagem M22A colocada na fila do cliente 2
+[2025-11-14 02:11:42] TX: R2|H1:0/40|H2:1/11|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 02:11:42] TX: E2|reason:Jogador 1 caiu
+[2025-11-14 02:11:42] Partida encerrada
+[2025-11-14 02:11:42] Gerenciador de partida iniciado
+[2025-11-14 02:11:42] Aguardando seleção de classe do jogador 1
+[2025-11-14 02:11:42] Cliente 1 desconectado
+[2025-11-14 02:11:42] Mensagem recebida da fila do cliente 1: Q
+[2025-11-14 02:11:42] Jogador 1 saiu durante seleção de classe
+[2025-11-14 02:11:42] Jogador 1 não selecionou classe
+[2025-11-14 02:11:42] Cliente 2 desconectado

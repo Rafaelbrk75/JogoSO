@@ -131,8 +131,16 @@ static int process_client_message(ServerContext *server, ClientContext *client)
 
     if (buffer[0] == 'J' || buffer[0] == 'M')
     {
+        append_log(server, "RX[%d]: %s (colocando na fila)", client->id, buffer);
         if (!queue_push(&client->queue, buffer))
+        {
             send_error(client, "Fila cheia, tente novamente");
+            append_log(server, "Fila cheia para cliente %d", client->id);
+        }
+        else
+        {
+            append_log(server, "Mensagem %s colocada na fila do cliente %d", buffer, client->id);
+        }
         return 1;
     }
 
@@ -150,31 +158,70 @@ static int process_client_message(ServerContext *server, ClientContext *client)
 
 static int wait_for_join(ServerContext *server, ClientContext *client, PlayerClass *outClass)
 {
-    (void)server; /* Parâmetro reservado para uso futuro */
     char msg[MAX_MESSAGE_SIZE];
+    
+    append_log(server, "Aguardando seleção de classe do jogador %d", client->id);
     
     DWORD startTime = GetTickCount();
     while (GetTickCount() - startTime < 60000)
     {
-        if (!client->connected)
+        if (!client->connected || client->disconnected)
+        {
+            append_log(server, "Cliente %d desconectado durante espera de classe", client->id);
             return 0;
+        }
+        
+        fd_set readfds;
+        struct timeval timeout;
+        FD_ZERO(&readfds);
+        FD_SET(client->socket, &readfds);
+        timeout.tv_sec = 0;
+        timeout.tv_usec = 100000;
+        
+        int activity = select(0, &readfds, NULL, NULL, &timeout);
+        if (activity > 0 && FD_ISSET(client->socket, &readfds))
+        {
+            process_client_message(server, client);
+        }
             
         if (queue_pop(&client->queue, msg, sizeof(msg), 0))
         {
-            JoinMessage parsed;
-            if (!parse_join_message(msg, &parsed))
-                continue;
-            if (parsed.playerId != client->id)
-                continue;
+            append_log(server, "Mensagem recebida da fila do cliente %d: %s", client->id, msg);
+            
+            if (msg[0] == 'Q')
+            {
+                append_log(server, "Jogador %d saiu durante seleção de classe", client->id);
+                client->connected = 0;
+                client->disconnected = 1;
+                return 0;
+            }
+            
+            if (msg[0] == 'J')
+            {
+                JoinMessage parsed;
+                if (!parse_join_message(msg, &parsed))
+                {
+                    append_log(server, "Falha ao fazer parse da mensagem J do cliente %d: %s", client->id, msg);
+                    continue;
+                }
+                if (parsed.playerId != client->id)
+                {
+                    append_log(server, "ID incorreto na mensagem J: esperado %d, recebido %d", client->id, parsed.playerId);
+                    continue;
+                }
 
-            client->classe = parsed.classe;
-            if (outClass)
-                *outClass = parsed.classe;
-            return 1;
+                append_log(server, "Jogador %d selecionou classe %d", client->id, parsed.classe);
+                client->classe = parsed.classe;
+                if (outClass)
+                    *outClass = parsed.classe;
+                return 1;
+            }
         }
         
-        Sleep(10);
+        Sleep(50);
     }
+    
+    append_log(server, "Timeout aguardando seleção de classe do jogador %d", client->id);
     return 0;
 }
 
@@ -226,6 +273,19 @@ static int fetch_turn_command(ServerContext *server, ClientContext *client, int 
     {
         if (!client->connected || client->disconnected)
             return 0;
+        
+        fd_set readfds;
+        struct timeval timeout;
+        FD_ZERO(&readfds);
+        FD_SET(client->socket, &readfds);
+        timeout.tv_sec = 0;
+        timeout.tv_usec = 100000;
+        
+        int activity = select(0, &readfds, NULL, NULL, &timeout);
+        if (activity > 0 && FD_ISSET(client->socket, &readfds))
+        {
+            process_client_message(server, client);
+        }
             
         if (queue_pop(&client->queue, msg, sizeof(msg), 0))
         {
@@ -237,11 +297,14 @@ static int fetch_turn_command(ServerContext *server, ClientContext *client, int 
                 return 0;
             }
 
-            *outCmd = parse_turn_command(client, msg, turnFlag);
-            return 1;
+            if (msg[0] == 'M')
+            {
+                *outCmd = parse_turn_command(client, msg, turnFlag);
+                return 1;
+            }
         }
         
-        Sleep(10);
+        Sleep(50);
     }
     
     if (client->disconnected)
@@ -552,19 +615,22 @@ int main(void)
             continue;
         }
 
-        for (int i = 0; i < 2; ++i)
+        if (!server.matchRunning)
         {
-            if (server.clients[i].connected && 
-                server.clients[i].socket != INVALID_SOCKET &&
-                FD_ISSET(server.clients[i].socket, &readfds))
+            for (int i = 0; i < 2; ++i)
             {
-                process_client_message(&server, &server.clients[i]);
+                if (server.clients[i].connected && 
+                    server.clients[i].socket != INVALID_SOCKET &&
+                    FD_ISSET(server.clients[i].socket, &readfds))
+                {
+                    process_client_message(&server, &server.clients[i]);
+                }
             }
-        }
 
-        if (!server.matchRunning && server.clients[0].connected && server.clients[1].connected)
-        {
-            run_match(&server);
+            if (server.clients[0].connected && server.clients[1].connected)
+            {
+                run_match(&server);
+            }
         }
 
         if (!server.clients[0].connected && !server.clients[1].connected)

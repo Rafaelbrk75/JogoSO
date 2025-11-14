@@ -121,15 +121,13 @@ static void handle_result_message(ClientState *app, const char *msg)
     {
         system("cls");
         app->needsRefresh = 0;
+        print_header();
     }
     
     app->lastHp1 = hp1;
     app->lastHp2 = hp2;
     app->lastMp1 = mp1;
     app->lastMp2 = mp2;
-    
-    if (needsClear)
-        print_header();
     
     set_color(COLOR_YELLOW);
     safe_print("                    TURNO: %d\n", turnFlag);
@@ -352,24 +350,6 @@ static int process_input(ClientState *state, const char *line)
         return 1;
     }
 
-    if (strcmp(upperLine, "F5") == 0 || strcmp(upperLine, "G") == 0)
-    {
-        net_send_line(state->socket, "G");
-        return 1;
-    }
-
-    if (strcmp(upperLine, "Q") == 0)
-    {
-        if (state->playerId > 0)
-        {
-            char quitMsg[8];
-            snprintf(quitMsg, sizeof(quitMsg), "Q%d", state->playerId);
-            net_send_line(state->socket, quitMsg);
-        }
-        state->running = 0;
-        return 0;
-    }
-
     if (state->awaitingClass)
     {
         if (len != 1)
@@ -405,12 +385,26 @@ static int process_input(ClientState *state, const char *line)
         }
         char joinMsg[8];
         snprintf(joinMsg, sizeof(joinMsg), "J%d%c", state->playerId, classChar);
+        state->awaitingClass = 0; // Desativa antes de enviar para evitar envios duplicados
         if (net_send_line(state->socket, joinMsg))
         {
             set_color(FOREGROUND_GREEN);
             safe_print("  ✅ Classe %s enviada. Aguarde início...\n", class_to_string(clazz));
             reset_color();
         }
+        else
+        {
+            set_color(FOREGROUND_RED);
+            safe_print("  ❌ Erro ao enviar classe. Tente novamente.\n");
+            reset_color();
+            state->awaitingClass = 1; // Reativa se falhou
+        }
+        return 1;
+    }
+
+    if (strcmp(upperLine, "F5") == 0 || strcmp(upperLine, "G") == 0)
+    {
+        net_send_line(state->socket, "G");
         return 1;
     }
 
