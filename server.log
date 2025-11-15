@@ -1214,3 +1214,85 @@
 [2025-11-14 02:11:42] Jogador 1 saiu durante seleção de classe
 [2025-11-14 02:11:42] Jogador 1 não selecionou classe
 [2025-11-14 02:11:42] Cliente 2 desconectado
+[2025-11-14 22:13:27] Servidor iniciado na porta 5050
+[2025-11-14 22:14:00] Gerenciador de partida iniciado
+[2025-11-14 22:14:00] Aguardando seleção de classe do jogador 1
+[2025-11-14 22:14:09] RX[1]: J1G
+[2025-11-14 22:14:09] RX[1]: J1G (colocando na fila)
+[2025-11-14 22:14:09] Mensagem J1G colocada na fila do cliente 1
+[2025-11-14 22:14:09] Mensagem recebida da fila do cliente 1: J1G
+[2025-11-14 22:14:09] Jogador 1 selecionou classe 0
+[2025-11-14 22:14:09] Aguardando seleção de classe do jogador 2
+[2025-11-14 22:14:16] RX[2]: J2M
+[2025-11-14 22:14:16] RX[2]: J2M (colocando na fila)
+[2025-11-14 22:14:16] Mensagem J2M colocada na fila do cliente 2
+[2025-11-14 22:14:16] Mensagem recebida da fila do cliente 2: J2M
+[2025-11-14 22:14:16] Jogador 2 selecionou classe 1
+[2025-11-14 22:14:16] TX: T1
+[2025-11-14 22:14:24] RX[1]: M11A
+[2025-11-14 22:14:24] RX[1]: M11A (colocando na fila)
+[2025-11-14 22:14:24] Mensagem M11A colocada na fila do cliente 1
+[2025-11-14 22:14:28] RX[2]: M12A
+[2025-11-14 22:14:28] RX[2]: M12A (colocando na fila)
+[2025-11-14 22:14:28] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 22:14:28] TX: R1|H1:92/50|H2:88/50|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 22:14:28] TX: T2
+[2025-11-14 22:14:48] Timeout para jogador 1, defesa aplicada
+[2025-11-14 22:14:55] RX[2]: M22A
+[2025-11-14 22:14:55] RX[2]: M22A (colocando na fila)
+[2025-11-14 22:14:55] Mensagem M22A colocada na fila do cliente 2
+[2025-11-14 22:14:55] TX: R2|H1:88/50|H2:88/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Ataque8, dano final 4 e 0
+[2025-11-14 22:14:55] TX: T1
+[2025-11-14 22:14:55] RX[1]: M21A
+[2025-11-14 22:14:55] RX[1]: M21A (colocando na fila)
+[2025-11-14 22:14:55] Mensagem M21A colocada na fila do cliente 1
+[2025-11-14 22:15:00] RX[2]: M12A
+[2025-11-14 22:15:00] RX[2]: M12A (colocando na fila)
+[2025-11-14 22:15:00] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 22:15:00] TX: R1|H1:84/50|H2:88/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Ataque8, dano final 4 e 0
+[2025-11-14 22:15:00] TX: T2
+[2025-11-14 22:15:07] RX[1]: M21A
+[2025-11-14 22:15:07] RX[1]: M21A (colocando na fila)
+[2025-11-14 22:15:07] Mensagem M21A colocada na fila do cliente 1
+[2025-11-14 22:15:07] RX[2]: M22A
+[2025-11-14 22:15:07] RX[2]: M22A (colocando na fila)
+[2025-11-14 22:15:07] Mensagem M22A colocada na fila do cliente 2
+[2025-11-14 22:15:07] TX: R2|H1:76/50|H2:76/50|C1:0/0|C2:0/0|L:P1 Ataque12, P2 Ataque8, dano final 8 e 12
+[2025-11-14 22:15:07] TX: T1
+[2025-11-14 22:15:20] RX[1]: M11D
+[2025-11-14 22:15:20] RX[1]: M11D (colocando na fila)
+[2025-11-14 22:15:20] Mensagem M11D colocada na fila do cliente 1
+[2025-11-14 22:15:20] RX[2]: M12A
+[2025-11-14 22:15:20] RX[2]: M12A (colocando na fila)
+[2025-11-14 22:15:20] Mensagem M12A colocada na fila do cliente 2
+[2025-11-14 22:15:20] TX: R1|H1:72/50|H2:76/50|C1:0/0|C2:0/0|L:P1 Defesa0, P2 Ataque8, dano final 4 e 0
+[2025-11-14 22:15:20] TX: T2
+[2025-11-14 22:15:40] Timeout para jogador 1, defesa aplicada
+[2025-11-14 22:15:42] Cliente 2 desconectado
+[2025-11-14 22:15:42] Jogador 2 saiu
+[2025-11-14 22:15:42] Falha ao obter comando do jogador 2
+[2025-11-14 22:15:42] TX: E1|reason:Jogador 2 desconectou
+[2025-11-14 22:15:42] Partida encerrada
+[2025-11-14 22:15:44] Cliente 1 desconectado
+[2025-11-14 22:20:24] Servidor iniciado na porta 5050
+[2025-11-14 22:21:48] Gerenciador de partida iniciado
+[2025-11-14 22:21:48] Aguardando seleção de classe do jogador 1
+[2025-11-14 22:22:01] RX[1]: J1M
+[2025-11-14 22:22:01] RX[1]: J1M (colocando na fila)
+[2025-11-14 22:22:01] Mensagem J1M colocada na fila do cliente 1
+[2025-11-14 22:22:01] Mensagem recebida da fila do cliente 1: J1M
+[2025-11-14 22:22:01] Jogador 1 selecionou classe 1
+[2025-11-14 22:22:01] Aguardando seleção de classe do jogador 2
+[2025-11-14 22:22:01] RX[2]: J2G
+[2025-11-14 22:22:01] RX[2]: J2G (colocando na fila)
+[2025-11-14 22:22:01] Mensagem J2G colocada na fila do cliente 2
+[2025-11-14 22:22:01] Mensagem recebida da fila do cliente 2: J2G
+[2025-11-14 22:22:01] Jogador 2 selecionou classe 0
+[2025-11-14 22:22:01] TX: T1
+[2025-11-14 22:22:10] RX[1]: Q1
+[2025-11-14 22:22:10] Cliente 1 solicitou saida
+[2025-11-14 22:22:10] Jogador 1 saiu
+[2025-11-14 22:22:10] Falha ao obter comando do jogador 1
+[2025-11-14 22:22:10] TX: E2|reason:Jogador 1 desconectou
+[2025-11-14 22:22:10] Partida encerrada
+[2025-11-14 22:22:10] Cliente 2 desconectado

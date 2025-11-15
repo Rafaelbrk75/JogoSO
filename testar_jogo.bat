@@ -22,13 +22,6 @@ if not exist "client.exe" (
 echo [OK] Executaveis encontrados.
 echo.
 
-REM Verificar se pthreadVC2.dll existe
-if not exist "pthreadVC2.dll" (
-    echo [AVISO] pthreadVC2.dll nao encontrado na pasta atual.
-    echo Certifique-se de que esta no PATH ou na mesma pasta dos executaveis.
-    echo.
-)
-
 echo ========================================
 echo   INSTRUCOES PARA TESTE MANUAL
 echo ========================================

@@ -4,9 +4,11 @@
 
 1. **Compilador C**: Visual Studio (MSVC) ou MinGW com GCC
 2. **Bibliotecas**:
-   - `pthreadVC2.dll` e `pthreadVC2.lib` (pthreads para Windows)
    - Winsock2 (já incluído no Windows SDK)
+   - Windows API (CreateFileMapping, Mutex) - já incluído no Windows SDK
 3. **Sistema**: Windows 10 ou superior
+
+**Nota**: Este jogo **não usa pthreads**. Utiliza apenas Winsock2 e Windows API para comunicação e sincronização.
 
 ## Passo 1: Compilar o Projeto
 
@@ -230,8 +232,7 @@ O arquivo `DUELRPG_MM.dat` contém o estado compartilhado:
 
 ### Servidor não inicia
 - Verifique se a porta 5050 está livre
-- Verifique se `pthreadVC2.dll` está no PATH ou na mesma pasta
-- Verifique permissões de escrita (para criar `server.log`)
+- Verifique permissões de escrita (para criar `server.log` e `DUELRPG_MM.dat`)
 
 ### Cliente não conecta
 - Verifique se o servidor está rodando
@@ -243,9 +244,9 @@ O arquivo `DUELRPG_MM.dat` contém o estado compartilhado:
 - Verifique logs do servidor para erros
 
 ### Erros de compilação
-- Verifique se todas as bibliotecas estão instaladas
-- Verifique se `pthreadVC2.lib` está acessível
-- Tente usar `build.bat gcc` se MSVC falhar
+- Verifique se o compilador está instalado corretamente (MSVC ou MinGW)
+- Verifique se Winsock2 está disponível (já incluído no Windows SDK)
+- Tente usar `build.bat` com MSVC ou GCC (MinGW)
 
 ## Próximos Passos
 

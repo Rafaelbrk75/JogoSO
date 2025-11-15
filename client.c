@@ -408,6 +408,24 @@ static int process_input(ClientState *state, const char *line)
         return 1;
     }
 
+    if (strcmp(upperLine, "Q") == 0)
+    {
+        // Envia mensagem de quit para o servidor
+        char quitMsg[8];
+        if (state->playerId > 0)
+            snprintf(quitMsg, sizeof(quitMsg), "Q%d", state->playerId);
+        else
+            snprintf(quitMsg, sizeof(quitMsg), "Q");
+        net_send_line(state->socket, quitMsg);
+        set_color(COLOR_YELLOW);
+        safe_print("  👋 Saindo do jogo...\n");
+        reset_color();
+        // Aguarda um pouco para garantir que a mensagem foi enviada
+        Sleep(100);
+        state->running = 0;
+        return 0;  // Retorna 0 para sair do loop principal
+    }
+
     if (state->awaitingAction)
     {
         if (len != 1)
@@ -477,6 +495,8 @@ int main(int argc, char **argv)
     const char *host = "127.0.0.1";
     if (argc > 1)
         host = argv[1];
+    
+    printf("Conectando ao servidor %s:%d...\n", host, SERVER_PORT);
 
     init_console();
 
@@ -502,7 +522,17 @@ int main(int argc, char **argv)
 
     if (connect(sock, (struct sockaddr *)&addr, sizeof(addr)) == SOCKET_ERROR)
     {
-        fprintf(stderr, "Nao foi possivel conectar ao servidor (%ld)\n", WSAGetLastError());
+        int err = WSAGetLastError();
+        fprintf(stderr, "\n");
+        fprintf(stderr, "  ❌ Nao foi possivel conectar ao servidor %s:%d\n", host, SERVER_PORT);
+        fprintf(stderr, "  Erro: %ld\n", err);
+        fprintf(stderr, "\n");
+        fprintf(stderr, "  Verifique:\n");
+        fprintf(stderr, "  1. O servidor esta rodando?\n");
+        fprintf(stderr, "  2. O IP esta correto? (use: client.exe <IP>)\n");
+        fprintf(stderr, "  3. O firewall permite conexoes na porta %d?\n", SERVER_PORT);
+        fprintf(stderr, "  4. As maquinas estao na mesma rede?\n");
+        fprintf(stderr, "\n");
         closesocket(sock);
         net_cleanup();
         return EXIT_FAILURE;

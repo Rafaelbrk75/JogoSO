@@ -12,18 +12,19 @@ Requisitos
 - Windows 10 ou superior.
 - Compilador C com suporte a:
   - **winsock2.h** (disponível no Windows SDK / Visual Studio).
-  - **pthreads.h** (instale `pthreads-w32`, por exemplo `pthreadVC2.dll/.lib`).
   - **WinAPI** (CreateFileMapping/MapViewOfFile/Mutexes) – já presente no Windows SDK.
+
+**Nota**: Este jogo **não usa pthreads**. Utiliza apenas Winsock2 e Windows API.
 
 Estrutura dos arquivos
 ----------------------
 ```
-server.c        # Servidor autoritativo (Winsock + pthreads + memória compartilhada)
-client.c        # Cliente de terminal (Winsock + pthreads)
+server.c        # Servidor autoritativo (Winsock + memória compartilhada)
+client.c        # Cliente de terminal (Winsock)
 game.c/.h       # Regras de combate, cooldowns, logs
 protocol.c/.h   # Notação compacta das mensagens (J, M, C, T, R, E, B, etc.)
 net.c/.h        # Funções auxiliares de socket (linha a linha)
-queue.c/.h      # Fila thread-safe (pthread_cond_timedwait)
+queue.c/.h      # Fila thread-safe (mutex do Windows)
 sharedmem.c/.h  # Gerenciamento do arquivo mapeado e mutex nomeado
 build.bat       # Script de compilação (cl ou gcc - MinGW)
 server.log      # Log textual (gerado em runtime)
@@ -39,11 +40,11 @@ Compilação
    ```
    Isso gera `server.exe` e `client.exe`.
 
-   Se preferir **MinGW (gcc)** com suporte a pthreads:
+   Se preferir **MinGW (gcc)**:
    ```
-   build.bat gcc
+   build.bat
    ```
-   (Certifique-se de linkar `-lpthread -lws2_32`.)
+   (O script detecta automaticamente e usa GCC se disponível, linkando apenas `-lws2_32`.)
 
 Execução
 --------
@@ -128,9 +129,9 @@ Logs
 
 Observação
 ----------
-Os diretórios `java/` e `build_java.bat` permanecem para referência da versão Java/JavaFX, mas **o requisito da disciplina é atendido exclusivamente pela solução em C descrita acima** (Winsock + pthreads + memória compartilhada).
+**O requisito da disciplina é atendido exclusivamente pela solução em C descrita acima** (Winsock + memória compartilhada com Windows API).
 
 Contato
 -------
-Projeto acadêmico para a disciplina de Sistemas Operacionais — demonstra sockets, sincronização com pthreads e uso de memória compartilhada no Windows.
+Projeto acadêmico para a disciplina de Sistemas Operacionais — demonstra sockets, sincronização com mutex do Windows e uso de memória compartilhada no Windows.
 
